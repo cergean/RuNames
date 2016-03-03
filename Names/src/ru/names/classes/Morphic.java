@@ -17,7 +17,7 @@
 package ru.names.classes;
 
 import ru.names.classes.enums.Usage;
-import ru.names.classes.enums.Ending;
+import ru.names.classes.enums.GrCaseEnding;
 import ru.names.classes.enums.Gender;
 
 /**
@@ -31,7 +31,7 @@ import ru.names.classes.enums.Gender;
 public class Morphic {
 
     private final RythmicString base;
-    private final Ending ending;
+    private final GrCaseEnding ending;
     private final Usage usage;
     private final Boolean outdated;
     
@@ -42,7 +42,7 @@ public class Morphic {
      * @param ending варианты окончаний для всех словоформ.
      * @param usage применимость слова.
      */
-    public Morphic(RythmicString base, Ending ending, Usage usage) {
+    public Morphic(RythmicString base, GrCaseEnding ending, Usage usage) {
         this.base = base;
         this.ending = ending;
         this.usage = usage;
@@ -57,7 +57,7 @@ public class Morphic {
      * @param usage применимость слова.
      * @param outdated флаг устаревшего, старомодного имени.
      */
-    public Morphic(RythmicString base, Ending ending, Usage usage,
+    public Morphic(RythmicString base, GrCaseEnding ending, Usage usage,
             Boolean outdated) {
         this.base = base;
         this.ending = ending;

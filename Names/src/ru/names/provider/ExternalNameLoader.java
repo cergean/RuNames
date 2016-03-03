@@ -23,7 +23,7 @@ import java.net.URI;
 import java.net.URL;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import ru.names.classes.enums.Ending;
+import ru.names.classes.enums.GrCaseEnding;
 import ru.names.classes.Morphic;
 import ru.names.classes.RythmicString;
 import ru.names.classes.enums.Usage;
@@ -84,7 +84,7 @@ public class ExternalNameLoader {
             while (oneLine != null) {
                 String[] oneName = (oneLine + ",,,,,").split(",");
                 externalNames.add(new Morphic(new RythmicString(oneName[0],
-                        oneName[1]), Ending.valueOf(oneName[2]), Usage.valueOf(
+                        oneName[1]), GrCaseEnding.valueOf(oneName[2]), Usage.valueOf(
                                 oneName[3]), Boolean.parseBoolean(oneName[4])));
                 oneLine = reader.readLine();
             }
