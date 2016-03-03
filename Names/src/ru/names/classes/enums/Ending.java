@@ -81,6 +81,23 @@ public enum Ending {
      */
     L_OV(new RythmicString("л"), new RythmicString("ла", "9"), new RythmicString("ов", "0"), new RythmicString("ова", "01"), new RythmicString("лович", "01"), new RythmicString("ловна", "01")),
     /**
+     * Ударное окончание "ок" с выпадающей гласной "о".
+     */
+    OK_KOV_Acct(new RythmicString("ок","9"), new RythmicString("ка", "0"), new RythmicString("ков", "9"), new RythmicString("кова", "90"), new RythmicString("кович", "90"), new RythmicString("ковна", "90")),
+    /**
+     * Безударное окончание "ок" с выпадающей гласной "о".
+     */
+    OK_KOV_Free(new RythmicString("ок","0"), new RythmicString("ка", "0"), new RythmicString("ков", "0"), new RythmicString("кова", "01"), new RythmicString("кович", "01"), new RythmicString("ковна", "01")),
+    /**
+     * Ударное окончание "ок" с выпадающей гласной "о".
+     */
+    OL_LOV_Acct(new RythmicString("ол","9"), new RythmicString("ла", "0"), new RythmicString("лов", "9"), new RythmicString("лова", "90"), new RythmicString("лович", "90"), new RythmicString("ловна", "90")),
+    /**
+     * Безударное окончание "ок" с выпадающей гласной "о".
+     */
+    OL_LOV_Free(new RythmicString("ол","0"), new RythmicString("ла", "0"), new RythmicString("лов", "0"), new RythmicString("лова", "01"), new RythmicString("лович", "01"), new RythmicString("ловна", "01")),
+    
+    /**
      * Окончание "овь", как в имени Любовь. мужской вариант окончания
      * отсутствует.
      */

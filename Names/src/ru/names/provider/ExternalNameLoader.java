@@ -64,8 +64,8 @@ public class ExternalNameLoader {
         try {
             reader = new BufferedReader(new FileReader(names));
             for (String oneLine; (oneLine = reader.readLine()) != null;) {
-                String[] oneName = oneLine.split(",");
-                externalNames.add(new Morphic(new RythmicString(oneName[0], oneName[1]), Ending.valueOf(oneName[2]), Usage.valueOf(oneName[3])));
+                String[] oneName = (oneLine+",,,,,").split(",");
+                externalNames.add(new Morphic(new RythmicString(oneName[0], oneName[1]), Ending.valueOf(oneName[2]), Usage.valueOf(oneName[3]),Boolean.parseBoolean(oneName[4])));
             }
         } catch (Exception ex) {
             Logger.getLogger(ExternalNameLoader.class.getName()).log(Level.SEVERE, null, ex);
