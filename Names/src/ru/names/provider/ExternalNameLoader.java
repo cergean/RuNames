@@ -32,11 +32,14 @@ public class ExternalNameLoader {
 
     public ExternalNameLoader() {
         try {
-            URL url = ExternalNameLoader.class.getProtectionDomain().getCodeSource().getLocation();
+            URL url = ExternalNameLoader.class.getProtectionDomain().
+                    getCodeSource().getLocation();
             init(new URI(url.toString() + CSVFILE));
         } catch (Exception ex) {
-            Logger.getLogger(ExternalNameLoader.class.getName()).log(Level.SEVERE, null, ex);
-            throw new ExternalDictionaryException("Не удалось получить путь к jar-файлу.", ex);
+            Logger.getLogger(ExternalNameLoader.class.getName()).log(
+                    Level.SEVERE, null, ex);
+            throw new ExternalDictionaryException(
+                    "Не удалось получить путь к jar-файлу.", ex);
         }
     }
 
@@ -47,8 +50,10 @@ public class ExternalNameLoader {
             }
             init(new URI(filePath));
         } catch (Exception ex) {
-            Logger.getLogger(ExternalNameLoader.class.getName()).log(Level.SEVERE, null, ex);
-            throw new ExternalDictionaryException("Не удалось получить путь к внешнему словарю.", ex);
+            Logger.getLogger(ExternalNameLoader.class.getName()).log(
+                    Level.SEVERE, null, ex);
+            throw new ExternalDictionaryException(
+                    "Не удалось получить путь к внешнему словарю.", ex);
         }
     }
 
@@ -61,15 +66,21 @@ public class ExternalNameLoader {
     }
 
     private void init(File names) {
+        String oneLine="";
         try {
             reader = new BufferedReader(new FileReader(names));
-            for (String oneLine; (oneLine = reader.readLine()) != null;) {
-                String[] oneName = (oneLine+",,,,,").split(",");
-                externalNames.add(new Morphic(new RythmicString(oneName[0], oneName[1]), Ending.valueOf(oneName[2]), Usage.valueOf(oneName[3]),Boolean.parseBoolean(oneName[4])));
+            oneLine = reader.readLine();
+            while (oneLine != null) {
+                String[] oneName = (oneLine + ",,,,,").split(",");
+                externalNames.add(new Morphic(new RythmicString(oneName[0],
+                        oneName[1]), Ending.valueOf(oneName[2]), Usage.valueOf(
+                                oneName[3]), Boolean.parseBoolean(oneName[4])));
+                oneLine = reader.readLine();
             }
         } catch (Exception ex) {
-            Logger.getLogger(ExternalNameLoader.class.getName()).log(Level.SEVERE, null, ex);
-            throw new ExternalDictionaryException("Ошибка при чтении файла.", ex);
+            Logger.getLogger(ExternalNameLoader.class.getName()).log(
+                    Level.SEVERE, null, ex);
+            throw new ExternalDictionaryException("Ошибка при чтении файла, строка \"" + oneLine+"\":", ex);
         }
     }
 
