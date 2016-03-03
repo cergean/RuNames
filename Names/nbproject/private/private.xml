@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/cergean/Documents/NetBeansProjects/Names/src/ru/names/provider/NameContainer.java</file>
-            <file>file:/C:/Users/cergean/Documents/NetBeansProjects/Names/src/ru/names/provider/NameProvider.java</file>
+            <file>file:/C:/Users/ksv/Documents/NetBeansProjects/RuNames/Names/src/ru/names/provider/ExternalNameLoader.java</file>
+            <file>file:/C:/Users/ksv/Documents/NetBeansProjects/RuNames/Names/src/ru/names/provider/NameContainer.java</file>
+            <file>file:/C:/Users/ksv/Documents/NetBeansProjects/RuNames/Names/src/ru/names/classes/Morphic.java</file>
+            <file>file:/C:/Users/ksv/Documents/NetBeansProjects/RuNames/Names/src/ru/names/classes/enums/Ending.java</file>
         </group>
     </open-files>
 </project-private>
