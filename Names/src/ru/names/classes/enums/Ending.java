@@ -42,6 +42,10 @@ public enum Ending {
      * Окончание "ай", например как в имени Николай.
      */
     AJ(GrCaseEnding.AJ_nom,GrCaseEnding.AJ_gen,GrCaseEnding.AJ_dat,GrCaseEnding.AJ_acc,GrCaseEnding.AJ_abl,GrCaseEnding.AJ_pre),
+    /**
+     * Окончание "ей", например как в слове муравей.
+     */
+    EJ_ЬEV(GrCaseEnding.EJ_ЬEV_nom,GrCaseEnding.EJ_ЬEV_gen,GrCaseEnding.EJ_ЬEV_dat,GrCaseEnding.EJ_ЬEV_acc,GrCaseEnding.EJ_ЬEV_abl,GrCaseEnding.EJ_ЬEV_pre),
     
     
     
