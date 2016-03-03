@@ -16,6 +16,7 @@
  */
 package ru.names.classes;
 
+import ru.names.classes.enums.Ending;
 import ru.names.classes.enums.Usage;
 import ru.names.classes.enums.GrCaseEnding;
 import ru.names.classes.enums.Gender;
@@ -31,7 +32,8 @@ import ru.names.classes.enums.Gender;
 public class Morphic {
 
     private final RythmicString base;
-    private final GrCaseEnding ending;
+    private final GrCaseEnding grCaseEnding;
+    private final Ending ending;
     private final Usage usage;
     private final Boolean outdated;
     
@@ -44,7 +46,8 @@ public class Morphic {
      */
     public Morphic(RythmicString base, GrCaseEnding ending, Usage usage) {
         this.base = base;
-        this.ending = ending;
+        this.grCaseEnding = ending;
+        this.ending = null;
         this.usage = usage;
         this.outdated = false;
     }
@@ -60,6 +63,39 @@ public class Morphic {
     public Morphic(RythmicString base, GrCaseEnding ending, Usage usage,
             Boolean outdated) {
         this.base = base;
+        this.grCaseEnding = ending;
+        this.ending = null;
+        this.usage = usage;
+        this.outdated = outdated;
+    }
+    
+    /**
+     * Конструктор вариатора словоформ.
+     *
+     * @param base строка, неизменно присутствуящая во всех словоформах.
+     * @param ending варианты окончаний для всех словоформ.
+     * @param usage применимость слова.
+     */
+    public Morphic(RythmicString base, Ending ending, Usage usage) {
+        this.base = base;
+        this.grCaseEnding = ending.getNominative();
+        this.ending = ending;
+        this.usage = usage;
+        this.outdated = false;
+    }
+
+    /**
+     * Конструктор вариатора словоформ.
+     *
+     * @param base строка, неизменно присутствуящая во всех словоформах.
+     * @param ending варианты окончаний для всех словоформ.
+     * @param usage применимость слова.
+     * @param outdated флаг устаревшего, старомодного имени.
+     */
+    public Morphic(RythmicString base, Ending ending, Usage usage,
+            Boolean outdated) {
+        this.base = base;
+        this.grCaseEnding = ending.getNominative();
         this.ending = ending;
         this.usage = usage;
         this.outdated = outdated;
@@ -72,8 +108,8 @@ public class Morphic {
      * @return имя для данного пола.
      */
     public RythmicString getGivenName(Gender gen) {
-        return base.add((gen.equals(Gender.MALE) ? ending.getMaleBaseEnd()
-                : ending.getFemaleBaseEnd()));
+        return base.add((gen.equals(Gender.MALE) ? grCaseEnding.getMaleBaseEnd()
+                : grCaseEnding.getFemaleBaseEnd()));
     }
 
     /**
@@ -83,8 +119,8 @@ public class Morphic {
      * @return фамилия для данного пола.
      */
     public RythmicString getFamilyName(Gender gen) {
-        return base.add((gen.equals(Gender.MALE) ? ending.getMaleFamEnd()
-                : ending.getFemaleFamEnd()));
+        return base.add((gen.equals(Gender.MALE) ? grCaseEnding.getMaleFamEnd()
+                : grCaseEnding.getFemaleFamEnd()));
     }
 
     /**
@@ -94,8 +130,8 @@ public class Morphic {
      * @return отчество для данного пола.
      */
     public RythmicString getPatronic(Gender gen) {
-        return base.add((gen.equals(Gender.MALE) ? ending.getMalePatEnd()
-                : ending.getFemalePatEnd()));
+        return base.add((gen.equals(Gender.MALE) ? grCaseEnding.getMalePatEnd()
+                : grCaseEnding.getFemalePatEnd()));
     }
 
     /**

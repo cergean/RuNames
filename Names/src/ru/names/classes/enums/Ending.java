@@ -23,11 +23,33 @@ package ru.names.classes.enums;
  */
 public enum Ending {
     /**
+     * Ударное окончание "а", например как в имени Фома.
+     */
+    A_Acct_Ы(GrCaseEnding.A_Acct_Ы_nom,GrCaseEnding.A_Acct_Ы_gen,GrCaseEnding.A_Acct_Ы_dat,GrCaseEnding.A_Acct_Ы_acc,GrCaseEnding.A_Acct_Ы_abl,GrCaseEnding.A_Acct_Ы_pre),
+    /**
+     * Ударное окончание "а", например как в имени Лука.
+     */
+    A_Acct_I(GrCaseEnding.A_Acct_I_nom,GrCaseEnding.A_Acct_I_gen,GrCaseEnding.A_Acct_I_dat,GrCaseEnding.A_Acct_I_acc,GrCaseEnding.A_Acct_I_abl,GrCaseEnding.A_Acct_I_pre),
+    /**
+     * Безударное окончание "а", например как в имени Никита.
+     */
+    A_Free_Ы(GrCaseEnding.A_Free_Ы_nom,GrCaseEnding.A_Free_Ы_gen,GrCaseEnding.A_Free_Ы_dat,GrCaseEnding.A_Free_Ы_acc,GrCaseEnding.A_Free_Ы_abl,GrCaseEnding.A_Free_Ы_pre),
+    /**
+     * Безударное окончание "а", например как в имени Анжелика.
+     */
+    A_Free_I(GrCaseEnding.A_Free_I_nom,GrCaseEnding.A_Free_I_gen,GrCaseEnding.A_Free_I_dat,GrCaseEnding.A_Free_I_acc,GrCaseEnding.A_Free_I_abl,GrCaseEnding.A_Free_I_pre),
+    /**
+     * Окончание "ай", например как в имени Николай.
+     */
+    AJ(GrCaseEnding.AJ_nom,GrCaseEnding.AJ_gen,GrCaseEnding.AJ_dat,GrCaseEnding.AJ_acc,GrCaseEnding.AJ_abl,GrCaseEnding.AJ_pre),
+    
+    
+    
+    /**
      * Пустое окончание, например как в имени Александр.
      */
     EMPTY_OV_Free(GrCaseEnding.EMPTY_OV_Free_nom, GrCaseEnding.EMPTY_OV_Free_gen, GrCaseEnding.EMPTY_OV_Free_dat, GrCaseEnding.EMPTY_OV_Free_acc, GrCaseEnding.EMPTY_OV_Free_abl,GrCaseEnding.EMPTY_OV_Free_pre);
     
-
     private final GrCaseEnding nominative;
     private final GrCaseEnding genitive;
     private final GrCaseEnding dative;

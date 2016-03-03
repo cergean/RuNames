@@ -27,14 +27,41 @@ import ru.names.classes.RythmicString;
  */
 public enum GrCaseEnding {
 
-    /**
-     * Ударное окончание "а", например как в имени Фома.
-     */
-    A_Acct(new RythmicString("а", "9"), new RythmicString("а", "9"), new RythmicString("ин", "9"), new RythmicString("ина", "09"), new RythmicString("ич", "9"), new RythmicString("инична", "901")),
-    /**
-     * Безударное окончание "а", например как в имени Никита.
-     */
-    A_Free(new RythmicString("а", "0"), new RythmicString("а", "0"), new RythmicString("ин", "0"), new RythmicString("ина", "01"), new RythmicString("ич", "0"), new RythmicString("ична", "01")),
+    A_Acct_Ы_nom(Endings.A_Acct, Endings.A_Acct, new RythmicString("ин", "9"), new RythmicString("ина", "09"), new RythmicString("ич", "9"), new RythmicString("инична", "901")),
+    A_Acct_Ы_gen(Endings.Ы_Acct, Endings.Ы_Acct, new RythmicString("ина", "90"), new RythmicString("иной", "09"), new RythmicString("ича", "90"), new RythmicString("иничны", "901")),
+    A_Acct_Ы_dat(Endings.E_Acct, Endings.E_Acct, new RythmicString("ину", "90"), new RythmicString("иной", "09"), new RythmicString("ичу", "90"), new RythmicString("иничне", "901")),
+    A_Acct_Ы_acc(Endings.U_Acct, Endings.U_Acct, new RythmicString("ина", "90"), new RythmicString("ину", "09"), new RythmicString("ича", "90"), new RythmicString("иничну", "901")),
+    A_Acct_Ы_abl(new RythmicString("ой", "9"), new RythmicString("ой", "9"), new RythmicString("иным", "90"), new RythmicString("иной", "09"), new RythmicString("ичом", "90"), new RythmicString("иничной", "901")),
+    A_Acct_Ы_pre(Endings.E_Acct, Endings.E_Acct, new RythmicString("ине", "90"), new RythmicString("иной", "09"), new RythmicString("иче", "90"), new RythmicString("иничне", "901")),
+    
+    A_Acct_I_nom(Endings.A_Acct, Endings.A_Acct, new RythmicString("ин", "9"), new RythmicString("ина", "09"), new RythmicString("ич", "9"), new RythmicString("инична", "901")),
+    A_Acct_I_gen(Endings.I_Acct, Endings.I_Acct, new RythmicString("ина", "90"), new RythmicString("иной", "09"), new RythmicString("ича", "90"), new RythmicString("иничны", "901")),
+    A_Acct_I_dat(Endings.E_Acct, Endings.E_Acct, new RythmicString("ину", "90"), new RythmicString("иной", "09"), new RythmicString("ичу", "90"), new RythmicString("иничне", "901")),
+    A_Acct_I_acc(Endings.U_Acct, Endings.U_Acct, new RythmicString("ина", "90"), new RythmicString("ину", "09"), new RythmicString("ича", "90"), new RythmicString("иничну", "901")),
+    A_Acct_I_abl(new RythmicString("ой", "9"), new RythmicString("ой", "9"), new RythmicString("иным", "90"), new RythmicString("иной", "09"), new RythmicString("ичом", "90"), new RythmicString("иничной", "901")),
+    A_Acct_I_pre(Endings.E_Acct, Endings.E_Acct, new RythmicString("ине", "90"), new RythmicString("иной", "09"), new RythmicString("иче", "90"), new RythmicString("иничне", "901")),
+    
+    A_Free_Ы_nom(Endings.A_Free, Endings.A_Free, new RythmicString("ин", "0"), new RythmicString("ина", "01"), new RythmicString("ич", "0"), new RythmicString("ична", "01")),
+    A_Free_Ы_gen(Endings.Ы_Free, Endings.Ы_Free, new RythmicString("ина", "0"), new RythmicString("иной", "01"), new RythmicString("ича", "01"), new RythmicString("ичны", "01")),
+    A_Free_Ы_dat(Endings.E_Free, Endings.E_Free, new RythmicString("ину", "0"), new RythmicString("иной", "01"), new RythmicString("ичу", "01"), new RythmicString("ичне", "01")),
+    A_Free_Ы_acc(Endings.U_Free, Endings.U_Free, new RythmicString("ина", "0"), new RythmicString("ину", "01"), new RythmicString("ича", "01"), new RythmicString("ичну", "01")),
+    A_Free_Ы_abl(new RythmicString("ой", "0"), new RythmicString("ой", "0"), new RythmicString("иным", "0"), new RythmicString("иной", "01"), new RythmicString("ичом", "01"), new RythmicString("ичной", "01")),
+    A_Free_Ы_pre(Endings.E_Free, Endings.E_Free, new RythmicString("ине", "0"), new RythmicString("иной", "01"), new RythmicString("иче", "01"), new RythmicString("ичне", "01")),
+    
+    A_Free_I_nom(Endings.A_Free, Endings.A_Free, new RythmicString("ин", "0"), new RythmicString("ина", "01"), new RythmicString("ич", "0"), new RythmicString("ична", "01")),
+    A_Free_I_gen(Endings.I_Free, Endings.I_Free, new RythmicString("ина", "0"), new RythmicString("иной", "01"), new RythmicString("ича", "01"), new RythmicString("ичны", "01")),
+    A_Free_I_dat(Endings.E_Free, Endings.E_Free, new RythmicString("ину", "0"), new RythmicString("иной", "01"), new RythmicString("ичу", "01"), new RythmicString("ичне", "01")),
+    A_Free_I_acc(Endings.U_Free, Endings.U_Free, new RythmicString("ина", "0"), new RythmicString("ину", "01"), new RythmicString("ича", "01"), new RythmicString("ичну", "01")),
+    A_Free_I_abl(new RythmicString("ой", "0"), new RythmicString("ой", "0"), new RythmicString("иным", "0"), new RythmicString("иной", "01"), new RythmicString("ичом", "01"), new RythmicString("ичной", "01")),
+    A_Free_I_pre(Endings.E_Free, Endings.E_Free, new RythmicString("ине", "0"), new RythmicString("иной", "01"), new RythmicString("иче", "01"), new RythmicString("ичне", "01")),
+    
+    AJ_nom(new RythmicString("ай", "9"), new RythmicString("айя", "90"), new RythmicString("аев", "90"), new RythmicString("аева", "901"), new RythmicString("аевич", "901"), new RythmicString("аевна", "901")),
+    AJ_gen(new RythmicString("ая", "90"), new RythmicString("айи", "90"), new RythmicString("аева", "901"), new RythmicString("аевой", "901"), new RythmicString("аевича", "901"), new RythmicString("аевна", "901")),
+    AJ_dat(new RythmicString("аю", "90"), new RythmicString("айе", "90"), new RythmicString("аеву", "901"), new RythmicString("аевой", "901"), new RythmicString("аевичу", "901"), new RythmicString("аевна", "901")),
+    AJ_acc(new RythmicString("ая", "90"), new RythmicString("айю", "90"), new RythmicString("аева", "901"), new RythmicString("аеву", "901"), new RythmicString("аевича", "901"), new RythmicString("аевна", "901")),
+    AJ_abl(new RythmicString("аем", "90"), new RythmicString("айей", "90"), new RythmicString("аевым", "901"), new RythmicString("аевой", "901"), new RythmicString("аевичу", "901"), new RythmicString("аевна", "901")),
+    AJ_pre(new RythmicString("ае", "90"), new RythmicString("айе", "90"), new RythmicString("аеве", "901"), new RythmicString("аевой", "901"), new RythmicString("аевич", "901"), new RythmicString("аевна", "901")),
+    
     /**
      * Окончание "ай", например как в имени Николай.
      */
@@ -64,7 +91,7 @@ public enum GrCaseEnding {
     /**
      * Окончание "иил", например как в имени Даниил.
      */
-    IIL_ILOV(new RythmicString("иил", "09"), new RythmicString("а", "0"), new RythmicString("илов", "90"), new RythmicString("илова", "901"), new RythmicString("илович", "901"), new RythmicString("иловна", "901")),
+    IIL_ILOV(new RythmicString("иил", "09"), Endings.A_Free, new RythmicString("илов", "90"), new RythmicString("илова", "901"), new RythmicString("илович", "901"), new RythmicString("иловна", "901")),
     /**
      * Окончание "ий", например как в имени Анатолий. Используется после
      * открытого слога.
@@ -141,23 +168,23 @@ public enum GrCaseEnding {
     /**
      * Пустое окончание, например как в имени Александр.
      */
-    EMPTY_OV_Free(new RythmicString(""), new RythmicString("а", "0"), new RythmicString("ов", "0"), new RythmicString("ова", "01"), new RythmicString("ович", "01"), new RythmicString("овна", "01")),
+    EMPTY_OV_Free(new RythmicString(""), Endings.A_Free, new RythmicString("ов", "0"), new RythmicString("ова", "01"), new RythmicString("ович", "01"), new RythmicString("овна", "01")),
     /**
      * Пустое окончание именительного падежа, например как в имени Александр.
      */
-    EMPTY_OV_Free_nom(new RythmicString(""), new RythmicString("а", "0"), new RythmicString("ов", "0"), new RythmicString("ова", "01"), new RythmicString("ович", "01"), new RythmicString("овна", "01")),
+    EMPTY_OV_Free_nom(new RythmicString(""), Endings.A_Free, new RythmicString("ов", "0"), new RythmicString("ова", "01"), new RythmicString("ович", "01"), new RythmicString("овна", "01")),
     /**
      * Пустое окончание родительного падежа, например как в имени Александр.
      */
-    EMPTY_OV_Free_gen(new RythmicString("а","0"), new RythmicString("ы", "0"), new RythmicString("ова", "0"), new RythmicString("овой", "01"), new RythmicString("овича", "010"), new RythmicString("овны", "01")),
+    EMPTY_OV_Free_gen(new RythmicString("а","0"), Endings.Ы_Free, new RythmicString("ова", "0"), new RythmicString("овой", "01"), new RythmicString("овича", "010"), new RythmicString("овны", "01")),
     /**
      * Пустое окончание дательного падежа, например как в имени Александр.
      */
-    EMPTY_OV_Free_dat(new RythmicString("у","0"), new RythmicString("е", "0"), new RythmicString("ову", "0"), new RythmicString("овой", "01"), new RythmicString("овичу", "010"), new RythmicString("овне", "01")),
+    EMPTY_OV_Free_dat(new RythmicString("у","0"), Endings.E_Free, new RythmicString("ову", "0"), new RythmicString("овой", "01"), new RythmicString("овичу", "010"), new RythmicString("овне", "01")),
     /**
      * Пустое окончание винительного падежа, например как в имени Александр.
      */
-    EMPTY_OV_Free_acc(new RythmicString("а","0"), new RythmicString("у", "0"), new RythmicString("ова", "0"), new RythmicString("ову", "01"), new RythmicString("овича", "010"), new RythmicString("овну", "01")),
+    EMPTY_OV_Free_acc(new RythmicString("а","0"), Endings.U_Free, new RythmicString("ова", "0"), new RythmicString("ову", "01"), new RythmicString("овича", "010"), new RythmicString("овну", "01")),
     /**
      * Пустое окончание творительного падежа, например как в имени Александр.
      */
@@ -165,12 +192,12 @@ public enum GrCaseEnding {
     /**
      * Пустое окончание предложного падежа, например как в имени Александр.
      */
-    EMPTY_OV_Free_pre(new RythmicString("е","0"), new RythmicString("е", "0"), new RythmicString("ове", "0"), new RythmicString("ове", "01"), new RythmicString("овиче", "010"), new RythmicString("овне", "01")),
+    EMPTY_OV_Free_pre(new RythmicString("е","0"), Endings.E_Free, new RythmicString("ове", "0"), new RythmicString("ове", "01"), new RythmicString("овиче", "010"), new RythmicString("овне", "01")),
     
     /**
      * Пустое ударное окончание, например как в фамилии Беляков.
      */
-    EMPTY_OV_Acct(new RythmicString(""), new RythmicString("а", "9"), new RythmicString("ов", "9"), new RythmicString("ова", "90"), new RythmicString("ович", "90"), new RythmicString("овна", "90")),
+    EMPTY_OV_Acct(new RythmicString(""), Endings.A_Acct, new RythmicString("ов", "9"), new RythmicString("ова", "90"), new RythmicString("ович", "90"), new RythmicString("овна", "90")),
     /**
      * Окончание "ь", например как в имени Игорь.
      */
