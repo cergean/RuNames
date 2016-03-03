@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.java.j2seproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
+            <name>Names</name>
+            <source-roots>
+                <root id="src.dir"/>
+            </source-roots>
+            <test-roots>
+                <root id="test.src.dir"/>
+            </test-roots>
+        </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>автоматически</word>
+            <word>благозвучия</word>
+            <word>быть</word>
+            <word>варианта</word>
+            <word>всегда</word>
+            <word>для</word>
+            <word>Женский</word>
+            <word>женским</word>
+            <word>женских</word>
+            <word>женского</word>
+            <word>задает</word>
+            <word>или</word>
+            <word>имен</word>
+            <word>именем</word>
+            <word>имени</word>
+            <word>исходных</word>
+            <word>как</word>
+            <word>качестве</word>
+            <word>ли</word>
+            <word>может</word>
+            <word>морфологическому</word>
+            <word>мужским</word>
+            <word>мужских</word>
+            <word>мужского</word>
+            <word>Мужской</word>
+            <word>например</word>
+            <word>окончание</word>
+            <word>окончаний</word>
+            <word>окончанию</word>
+            <word>окончания</word>
+            <word>определения</word>
+            <word>определяющий</word>
+            <word>отчеств</word>
+            <word>отчества</word>
+            <word>отчеством</word>
+            <word>пол</word>
+            <word>Полная</word>
+            <word>полный</word>
+            <word>применимо</word>
+            <word>применимое</word>
+            <word>применимость</word>
+            <word>размеры</word>
+            <word>род</word>
+            <word>слов</word>
+            <word>слова</word>
+            <word>Слово</word>
+            <word>соответствует</word>
+            <word>список</word>
+            <word>стихотворные</word>
+            <word>Тип</word>
+            <word>только</word>
+            <word>учетом</word>
+            <word>фамилией</word>
+            <word>фамилии</word>
+            <word>фамилий</word>
+            <word>Фома</word>
+        </spellchecker-wordlist>
+    </configuration>
+</project>
