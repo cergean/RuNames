@@ -20,6 +20,7 @@ import ru.names.classes.enums.GrCaseEnding;
 import ru.names.classes.Morphic;
 import ru.names.classes.RythmicString;
 import ru.names.classes.enums.Ending;
+import ru.names.classes.enums.EndingFull;
 import ru.names.classes.enums.Usage;
 
 /**
@@ -161,7 +162,7 @@ public class NameContainer {
         new Morphic(new RythmicString("Журавл", "0*"), GrCaseEnding.SOFT_Acct, Usage.FAM_ONLY),
         new Morphic(new RythmicString("Зайц", "9"), GrCaseEnding.SOFT_Free, Usage.FAM_ONLY),
         new Morphic(new RythmicString("Захар", "09"), Ending.EMPTY_OV_Free_Ы, Usage.MALE_FAM),
-        new Morphic(new RythmicString("Зим", "0"), Ending.A_Acct_Ы, Usage.FAM_ONLY),
+        new Morphic(new RythmicString("Зим", "0"), EndingFull.A_Acct_Ы, Usage.FAM_ONLY),
         new Morphic(new RythmicString("Зина", "00"), Ending.ID_IDOV, Usage.FEMALE_NAME),
         new Morphic(new RythmicString("Зинов", "09"), Ending.IJ_ЬEV, Usage.MALE_FAM),
         new Morphic(new RythmicString("Злат", "9"), Ending.A_Free_Ы, Usage.FEMALE_NAME),
@@ -219,7 +220,7 @@ public class NameContainer {
         new Morphic(new RythmicString("Кудрявц", "09"), GrCaseEnding.SOFT_Free, Usage.FAM_ONLY),
         new Morphic(new RythmicString("Кудряш", "0*"), Ending.EMPTY_OV_Acct_I, Usage.FAM_ONLY),
         new Morphic(new RythmicString("Кузнец", "0*"), Ending.EMPTY_OV_Acct_Ы, Usage.FAM_ONLY),
-        new Morphic(new RythmicString("Кузьм", "0"), Ending.A_Acct_Ы, Usage.MALE_FAM),
+        new Morphic(new RythmicString("Кузьм", "0"), EndingFull.A_Acct_Ы, Usage.MALE_FAM),
         new Morphic(new RythmicString("Кулаг", "09"), Ending.A_Free_I, Usage.FAM_ONLY),
         new Morphic(new RythmicString("Кулак", "0*"), Ending.EMPTY_OV_Acct_I, Usage.FAM_ONLY),
         new Morphic(new RythmicString("Кулик", "0*"), Ending.EMPTY_OV_Acct_I, Usage.FAM_ONLY),
@@ -389,7 +390,7 @@ public class NameContainer {
         new Morphic(new RythmicString("Филат", "09"), Ending.EMPTY_OV_Free_Ы, Usage.FAM_ONLY),
         new Morphic(new RythmicString("Филип", "09"), GrCaseEnding.P_OV, Usage.MALE_FAM),
         new Morphic(new RythmicString("Фок", "0"), Ending.A_Acct_I, Usage.MALE_FAM),
-        new Morphic(new RythmicString("Фом", "0"), Ending.A_Acct_Ы, Usage.MALE_FAM),
+        new Morphic(new RythmicString("Фом", "0"), EndingFull.A_Acct_Ы, Usage.MALE_FAM),
         new Morphic(new RythmicString("Фомич", "09"), GrCaseEnding.SOFT_Free, Usage.FAM_ONLY),
         new Morphic(new RythmicString("Фрол", "*"), Ending.EMPTY_OV_Acct_Ы, Usage.FAM_ONLY),
         new Morphic(new RythmicString("Харитон", "109"), Ending.EMPTY_OV_Free_Ы, Usage.MALE_FAM),

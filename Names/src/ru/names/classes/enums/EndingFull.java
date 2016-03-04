@@ -20,6 +20,31 @@ package ru.names.classes.enums;
  *
  * @author cergean
  */
-public class EndingFull {
+public enum EndingFull {
+    
+    /**
+     * Ударное окончание "а", например как в имени Фома.
+     */
+    A_Acct_Ы("A_Acct_Ы");
+    
+    private final Ending single;
+    private final Ending plural;
+
+    private EndingFull(String name) {
+        this(Ending.valueOf(name+"_s"), Ending.valueOf(name+"_p")); 
+    }
+
+    private EndingFull(Ending single, Ending plural) {
+        this.single = single;
+        this.plural = plural;
+    }
+
+    public Ending getSingle() {
+        return single;
+    }
+
+    public Ending getPlural() {
+        return plural;
+    }
     
 }

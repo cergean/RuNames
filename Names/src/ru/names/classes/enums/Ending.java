@@ -22,10 +22,9 @@ package ru.names.classes.enums;
  * @author cergean
  */
 public enum Ending {
-    /**
-     * Ударное окончание "а", например как в имени Фома.
-     */
-    A_Acct_Ы("A_Acct_Ы"),
+    
+    A_Acct_Ы_s("A_Acct_Ы_s"),
+    A_Acct_Ы_p("A_Acct_Ы_p"),
     /**
      * Ударное окончание "а", например как в имени Лука.
      */

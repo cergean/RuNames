@@ -38,7 +38,30 @@ public class Endings {
      * Безударное окончание "а"
      */
     public static final RythmicString A_Free = new RythmicString("а", "0");
-
+    /**
+     * Ударное окончание "ам"
+     */
+    public static final RythmicString AM_Acct =new RythmicString("ам", "9");
+    /**
+     * Безударное окончание "ам"
+     */
+    public static final RythmicString AM_Free =new RythmicString("ам", "0");
+/**
+     * Ударное окончание "ами"
+     */
+    public static final RythmicString AMI_Acct =new RythmicString("ами", "90");
+    /**
+     * Безударное окончание "ами"
+     */
+    public static final RythmicString AMI_Free =new RythmicString("ами", "01");
+    /**
+     * Ударное окончание "ах"
+     */
+    public static final RythmicString AH_Acct =new RythmicString("ах", "9");
+    /**
+     * Безударное окончание "ах"
+     */
+    public static final RythmicString AH_Free =new RythmicString("ах", "0");
     /**
      * Ударное окончание "е"
      */

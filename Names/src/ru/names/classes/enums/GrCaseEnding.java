@@ -27,12 +27,18 @@ import ru.names.classes.RythmicString;
  */
 public enum GrCaseEnding {
 
-    A_Acct_Ы_nom(Endings.A_Acct, Endings.A_Acct, new RythmicString("ин", "9"), new RythmicString("ина", "09"), new RythmicString("ич", "9"), new RythmicString("инична", "901")),
-    A_Acct_Ы_gen(Endings.Ы_Acct, Endings.Ы_Acct, new RythmicString("ина", "90"), new RythmicString("иной", "09"), new RythmicString("ича", "90"), new RythmicString("иничны", "901")),
-    A_Acct_Ы_dat(Endings.E_Acct, Endings.E_Acct, new RythmicString("ину", "90"), new RythmicString("иной", "09"), new RythmicString("ичу", "90"), new RythmicString("иничне", "901")),
-    A_Acct_Ы_acc(Endings.U_Acct, Endings.U_Acct, new RythmicString("ина", "90"), new RythmicString("ину", "09"), new RythmicString("ича", "90"), new RythmicString("иничну", "901")),
-    A_Acct_Ы_abl(Endings.OJ_Acct, Endings.OJ_Acct, new RythmicString("иным", "90"), new RythmicString("иной", "09"), new RythmicString("ичом", "90"), new RythmicString("иничной", "901")),
-    A_Acct_Ы_pre(Endings.E_Acct, Endings.E_Acct, new RythmicString("ине", "90"), new RythmicString("иной", "09"), new RythmicString("иче", "90"), new RythmicString("иничне", "901")),
+    A_Acct_Ы_s_nom(Endings.A_Acct, Endings.A_Acct, new RythmicString("ин", "9"), new RythmicString("ина", "09"), new RythmicString("ич", "9"), new RythmicString("инична", "901")),
+    A_Acct_Ы_s_gen(Endings.Ы_Acct, Endings.Ы_Acct, new RythmicString("ина", "09"), new RythmicString("иной", "09"), new RythmicString("ича", "90"), new RythmicString("иничны", "901")),
+    A_Acct_Ы_s_dat(Endings.E_Acct, Endings.E_Acct, new RythmicString("ину", "09"), new RythmicString("иной", "09"), new RythmicString("ичу", "90"), new RythmicString("иничне", "901")),
+    A_Acct_Ы_s_acc(Endings.U_Acct, Endings.U_Acct, new RythmicString("ина", "09"), new RythmicString("ину", "09"), new RythmicString("ича", "90"), new RythmicString("иничну", "901")),
+    A_Acct_Ы_s_abl(Endings.OJ_Acct, Endings.OJ_Acct, new RythmicString("иным", "09"), new RythmicString("иной", "09"), new RythmicString("ичом", "90"), new RythmicString("иничной", "901")),
+    A_Acct_Ы_s_pre(Endings.E_Acct, Endings.E_Acct, new RythmicString("ине", "09"), new RythmicString("иной", "09"), new RythmicString("иче", "90"), new RythmicString("иничне", "901")),
+    A_Acct_Ы_p_nom(Endings.Ы_Acct, Endings.Ы_Acct, new RythmicString("ины", "09"), new RythmicString("ины", "09"), new RythmicString("ичи", "9"), new RythmicString("иничны", "901")),
+    A_Acct_Ы_p_gen(Endings.Empty, Endings.Empty, new RythmicString("иных", "09"), new RythmicString("иной", "09"), new RythmicString("ичей", "90"), new RythmicString("иничн", "90")),
+    A_Acct_Ы_p_dat(Endings.AM_Acct, Endings.AM_Acct, new RythmicString("иным", "09"), new RythmicString("иной", "09"), new RythmicString("ичам", "90"), new RythmicString("иничным", "901")),
+    A_Acct_Ы_p_acc(Endings.Empty, Endings.Empty, new RythmicString("иных", "09"), new RythmicString("ину", "09"), new RythmicString("ичей", "90"), new RythmicString("иничн", "901")),
+    A_Acct_Ы_p_abl(Endings.AMI_Acct, Endings.AMI_Acct, new RythmicString("иными", "090"), new RythmicString("иной", "09"), new RythmicString("ичами", "90"), new RythmicString("иничных", "901")),
+    A_Acct_Ы_p_pre(Endings.AH_Acct, Endings.AH_Acct, new RythmicString("иных", "09"), new RythmicString("иной", "09"), new RythmicString("ичах", "90"), new RythmicString("иничным", "901")),
     
     A_Acct_I_nom(Endings.A_Acct, Endings.A_Acct, new RythmicString("ин", "9"), new RythmicString("ина", "09"), new RythmicString("ич", "9"), new RythmicString("инична", "901")),
     A_Acct_I_gen(Endings.I_Acct, Endings.I_Acct, new RythmicString("ина", "90"), new RythmicString("иной", "09"), new RythmicString("ича", "90"), new RythmicString("иничны", "901")),
@@ -201,7 +207,6 @@ public enum GrCaseEnding {
     EMPTY_OV_Free_I_abl(new RythmicString("ом","0"), Endings.OJ_Free, new RythmicString("овым", "01"), new RythmicString("овой", "01"), new RythmicString("овичем", "010"), new RythmicString("овной", "01")),
     EMPTY_OV_Free_I_pre(new RythmicString("е","0"), Endings.E_Free, new RythmicString("ове", "01"), new RythmicString("ове", "01"), new RythmicString("овиче", "010"), new RythmicString("овне", "01")),
     
-    
     EMPTY_OV_Acct_Ы_nom(new RythmicString(""), Endings.A_Acct, new RythmicString("ов", "9"), new RythmicString("ова", "90"), new RythmicString("ович", "90"), new RythmicString("овна", "90")),
     EMPTY_OV_Acct_Ы_gen(new RythmicString("а","9"), Endings.Ы_Acct, new RythmicString("ова", "90"), new RythmicString("овой", "90"), new RythmicString("овича", "901"), new RythmicString("овны", "90")),
     EMPTY_OV_Acct_Ы_dat(new RythmicString("у","9"), Endings.E_Acct, new RythmicString("ову", "90"), new RythmicString("овой", "90"), new RythmicString("овичу", "901"), new RythmicString("овне", "90")),
@@ -225,16 +230,16 @@ public enum GrCaseEnding {
      */
     SOFT_Acct(new RythmicString("ь"), new RythmicString("я", "9"), new RythmicString("ев", "9"), new RythmicString("ева", "90"), new RythmicString("евич", "90"), new RythmicString("евна", "90"));
 
-    private final RythmicString maleBase;
-    private final RythmicString femaleBase;
+    private final RythmicString endNameMale;
+    private final RythmicString endNameFemale;
     private final RythmicString endFamMale;
     private final RythmicString endFamFemale;
     private final RythmicString endPatMale;
     private final RythmicString endPatFemale;
 
-    private GrCaseEnding(RythmicString maleBase, RythmicString femaleBase, RythmicString famMale, RythmicString famFemale, RythmicString patMale, RythmicString patFemale) {
-        this.maleBase = maleBase;
-        this.femaleBase = femaleBase;
+    private GrCaseEnding(RythmicString endNameMale, RythmicString endNameFemale, RythmicString famMale, RythmicString famFemale, RythmicString patMale, RythmicString patFemale) {
+        this.endNameMale = endNameMale;
+        this.endNameFemale = endNameFemale;
         this.endFamMale = famMale;
         this.endFamFemale = famFemale;
         this.endPatMale = patMale;
@@ -245,16 +250,16 @@ public enum GrCaseEnding {
      *
      * @return окончание мужского имени
      */
-    public RythmicString getMaleBaseEnd() {
-        return maleBase;
+    public RythmicString getEndNameMale() {
+        return endNameMale;
     }
 
     /**
      *
      * @return окончание женского имени
      */
-    public RythmicString getFemaleBaseEnd() {
-        return femaleBase;
+    public RythmicString getEndNameFemale() {
+        return endNameFemale;
     }
 
     /**
