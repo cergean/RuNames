@@ -63,20 +63,25 @@ public enum GrCaseEnding {
     AJ_pre(new RythmicString("ае", "90"), new RythmicString("айе", "90"), new RythmicString("аеве", "901"), new RythmicString("аевой", "901"), new RythmicString("аевич", "9010"), new RythmicString("аевне", "901")),
     
     EJ_ЬEV_nom(new RythmicString("ей", "9"), new RythmicString("ея", "90"), new RythmicString("ьев", "9"), new RythmicString("ьева", "90"), new RythmicString("ьевич", "90"), new RythmicString("ьевна", "90")),
-    EJ_ЬEV_gen(new RythmicString("ья", "9"), new RythmicString("еи", "90"), new RythmicString("ьева", "90"), new RythmicString("ьевой", "90"), new RythmicString("ьевича", "901"), new RythmicString("ьевны", "90")),
-    EJ_ЬEV_dat(new RythmicString("ью", "9"), new RythmicString("ее", "90"), new RythmicString("ьеву", "90"), new RythmicString("ьевой", "90"), new RythmicString("ьевичу", "901"), new RythmicString("ьевне", "90")),
-    EJ_ЬEV_acc(new RythmicString("ья", "9"), new RythmicString("ею", "90"), new RythmicString("ьева", "90"), new RythmicString("ьеву", "90"), new RythmicString("ьевича", "901"), new RythmicString("ьевну", "90")),
-    EJ_ЬEV_abl(new RythmicString("ьем", "9"), new RythmicString("еей", "90"), new RythmicString("ьевым", "90"), new RythmicString("ьевой", "90"), new RythmicString("ьевичем", "901"), new RythmicString("ьевной", "90")),
-    EJ_ЬEV_pre(new RythmicString("ье", "9"), new RythmicString("ее", "90"), new RythmicString("ьеве", "90"), new RythmicString("ьевой", "90"), new RythmicString("ьевиче", "901"), new RythmicString("ьевне", "90")),
+    EJ_ЬEV_gen(new RythmicString("ья", "9"), new RythmicString("еи", "90"), new RythmicString("ьева", "90"), new RythmicString("ьевой", "90"), new RythmicString("ьевича", "9010"), new RythmicString("ьевны", "90")),
+    EJ_ЬEV_dat(new RythmicString("ью", "9"), new RythmicString("ее", "90"), new RythmicString("ьеву", "90"), new RythmicString("ьевой", "90"), new RythmicString("ьевичу", "9010"), new RythmicString("ьевне", "90")),
+    EJ_ЬEV_acc(new RythmicString("ья", "9"), new RythmicString("ею", "90"), new RythmicString("ьева", "90"), new RythmicString("ьеву", "90"), new RythmicString("ьевича", "9010"), new RythmicString("ьевну", "90")),
+    EJ_ЬEV_abl(new RythmicString("ьем", "9"), new RythmicString("еей", "90"), new RythmicString("ьевым", "90"), new RythmicString("ьевой", "90"), new RythmicString("ьевичем", "9010"), new RythmicString("ьевной", "90")),
+    EJ_ЬEV_pre(new RythmicString("ье", "9"), new RythmicString("ее", "90"), new RythmicString("ьеве", "90"), new RythmicString("ьевой", "90"), new RythmicString("ьевиче", "9010"), new RythmicString("ьевне", "90")),
     
-    /**
-     * Окончание "ей", например как в слове муравей.
-     */
-    EJ_ЬEV(new RythmicString("ей", "9"), new RythmicString("ея", "90"), new RythmicString("ьев", "9"), new RythmicString("ьева", "90"), new RythmicString("ьевич", "90"), new RythmicString("ьевна", "90")),
-    /**
-     * Окончание "ей", например как в имени Андрей.
-     */
-    EJ_EEV(new RythmicString("ей", "9"), new RythmicString("ея", "90"), new RythmicString("еев", "90"), new RythmicString("еева", "901"), new RythmicString("еевич", "901"), new RythmicString("еевна", "901")),
+    EJ_EEV_nom(new RythmicString("ей", "9"), new RythmicString("ея", "90"), new RythmicString("еев", "90"), new RythmicString("еева", "901"), new RythmicString("еевич", "901"), new RythmicString("еевна", "901")),
+    EJ_EEV_gen(new RythmicString("ея", "90"), new RythmicString("еи", "90"), new RythmicString("еева", "901"), new RythmicString("еевой", "901"), new RythmicString("еевича", "9010"), new RythmicString("еевны", "901")),
+    EJ_EEV_dat(new RythmicString("ею", "90"), new RythmicString("ее", "90"), new RythmicString("ееву", "901"), new RythmicString("еевой", "901"), new RythmicString("еевичу", "9010"), new RythmicString("еевне", "901")),
+    EJ_EEV_acc(new RythmicString("ея", "90"), new RythmicString("ею", "90"), new RythmicString("еева", "901"), new RythmicString("ееву", "901"), new RythmicString("еевича", "9010"), new RythmicString("еевну", "901")),
+    EJ_EEV_abl(new RythmicString("еем", "90"), new RythmicString("еей", "90"), new RythmicString("еевым", "901"), new RythmicString("еевой", "901"), new RythmicString("еевичем", "9010"), new RythmicString("еевной", "901")),
+    EJ_EEV_pre(new RythmicString("ее", "90"), new RythmicString("ее", "90"), new RythmicString("ееве", "901"), new RythmicString("еевой", "901"), new RythmicString("еевиче", "9010"), new RythmicString("еевне", "901")),
+    
+    EL_nom(new RythmicString("ел", "0"), new RythmicString("ла", "0"), new RythmicString("лов", "0"), new RythmicString("лова", "01"), new RythmicString("лович", "01"), new RythmicString("ловна", "01")),
+    EL_gen(new RythmicString("ла", "0"), new RythmicString("лы", "0"), new RythmicString("лов", "0"), new RythmicString("лова", "01"), new RythmicString("лович", "01"), new RythmicString("ловна", "01")),
+    EL_dat(new RythmicString("лу", "0"), new RythmicString("ле", "0"), new RythmicString("лов", "0"), new RythmicString("лова", "01"), new RythmicString("лович", "01"), new RythmicString("ловна", "01")),
+    EL_acc(new RythmicString("ла", "0"), new RythmicString("лу", "0"), new RythmicString("лов", "0"), new RythmicString("лова", "01"), new RythmicString("лович", "01"), new RythmicString("ловна", "01")),
+    EL_abl(new RythmicString("лом", "0"), new RythmicString("лой", "0"), new RythmicString("лов", "0"), new RythmicString("лова", "01"), new RythmicString("лович", "01"), new RythmicString("ловна", "01")),
+    EL_pre(new RythmicString("ле", "0"), new RythmicString("ле", "0"), new RythmicString("лов", "0"), new RythmicString("лова", "01"), new RythmicString("лович", "01"), new RythmicString("ловна", "01")),
     /**
      * Окончание "ел", как в имени Павел.
      */
