@@ -23,7 +23,12 @@ import ru.names.classes.RythmicString;
  * @author cergean
  */
 public class Endings {
-
+    
+    
+    /**
+     * Пустое окончание
+     */
+    public static final RythmicString Empty = new RythmicString("");
     /**
      * Ударное окончание "а"
      */

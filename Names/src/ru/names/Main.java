@@ -16,7 +16,11 @@
  */
 package ru.names;
 
+import java.util.ArrayList;
+import java.util.List;
+import ru.names.classes.Morphic;
 import ru.names.classes.Person;
+import ru.names.classes.enums.Gender;
 import ru.names.generator.NameGenerator;
 
 /**
@@ -27,14 +31,15 @@ public class Main {
     
     public static void main(String[] args) {
         NameGenerator generator = new NameGenerator();
+        List<Morphic> morphics = new ArrayList<>();
         //generator.providerStat();
-        for (Person person: generator.listFineChildren("Матвей", "Мартынов")){
-            System.out.println(person);
-        }
-       /* for (int i = 0; i < 10; i++) {
-            System.out.println(" random: "+generator.nextPerson());
-            System.out.println("   fine: "+generator.nextFinePerson());
-            System.out.println("perfect: "+generator.nextPerfectPerson()); 
+        generator.listFineChildren("Матвей", "Мартынов").stream().
+                forEach((person) -> {
+                    System.out.println(person);
+        }); /* for (int i = 0; i < 10; i++) {
+        System.out.println(" random: "+generator.nextPerson());
+        System.out.println("   fine: "+generator.nextFinePerson());
+        System.out.println("perfect: "+generator.nextPerfectPerson());
         }*/
         
     }

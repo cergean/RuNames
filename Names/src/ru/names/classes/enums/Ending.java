@@ -25,38 +25,89 @@ public enum Ending {
     /**
      * Ударное окончание "а", например как в имени Фома.
      */
-    A_Acct_Ы(GrCaseEnding.A_Acct_Ы_nom,GrCaseEnding.A_Acct_Ы_gen,GrCaseEnding.A_Acct_Ы_dat,GrCaseEnding.A_Acct_Ы_acc,GrCaseEnding.A_Acct_Ы_abl,GrCaseEnding.A_Acct_Ы_pre),
+    A_Acct_Ы("A_Acct_Ы"),
     /**
      * Ударное окончание "а", например как в имени Лука.
      */
-    A_Acct_I(GrCaseEnding.A_Acct_I_nom,GrCaseEnding.A_Acct_I_gen,GrCaseEnding.A_Acct_I_dat,GrCaseEnding.A_Acct_I_acc,GrCaseEnding.A_Acct_I_abl,GrCaseEnding.A_Acct_I_pre),
+    A_Acct_I("A_Acct_I"),
     /**
      * Безударное окончание "а", например как в имени Никита.
      */
-    A_Free_Ы(GrCaseEnding.A_Free_Ы_nom,GrCaseEnding.A_Free_Ы_gen,GrCaseEnding.A_Free_Ы_dat,GrCaseEnding.A_Free_Ы_acc,GrCaseEnding.A_Free_Ы_abl,GrCaseEnding.A_Free_Ы_pre),
+    A_Free_Ы("A_Free_Ы"),
     /**
      * Безударное окончание "а", например как в имени Анжелика.
      */
-    A_Free_I(GrCaseEnding.A_Free_I_nom,GrCaseEnding.A_Free_I_gen,GrCaseEnding.A_Free_I_dat,GrCaseEnding.A_Free_I_acc,GrCaseEnding.A_Free_I_abl,GrCaseEnding.A_Free_I_pre),
+    A_Free_I("A_Free_I"),
     /**
      * Окончание "ай", например как в имени Николай.
      */
-    AJ(GrCaseEnding.AJ_nom,GrCaseEnding.AJ_gen,GrCaseEnding.AJ_dat,GrCaseEnding.AJ_acc,GrCaseEnding.AJ_abl,GrCaseEnding.AJ_pre),
+    AJ("AJ"),
     /**
      * Окончание "ей", например как в слове муравей.
      */
-    EJ_ЬEV(GrCaseEnding.EJ_ЬEV_nom,GrCaseEnding.EJ_ЬEV_gen,GrCaseEnding.EJ_ЬEV_dat,GrCaseEnding.EJ_ЬEV_acc,GrCaseEnding.EJ_ЬEV_abl,GrCaseEnding.EJ_ЬEV_pre),
+    EJ_ЬEV("EJ_ЬEV"),
     /**
      * Окончание "ей", например как в имени Андрей.
      */
-    EJ_EEV(GrCaseEnding.EJ_EEV_nom,GrCaseEnding.EJ_EEV_gen,GrCaseEnding.EJ_EEV_dat,GrCaseEnding.EJ_EEV_acc,GrCaseEnding.EJ_EEV_abl,GrCaseEnding.EJ_EEV_pre),
-    
-    
-    
+    EJ_EEV("EJ_EEV"),
+    /**
+     * Окончание "ел", как в имени Павел.
+     */
+    EL("EL"),
+    /**
+     * Окончание "ид", как в имени Давид. при образовании фамилии и отчества "и"
+     * преобразуется в "ы".
+     */
+    ID_ЫDOV("ID_ЫDOV"),
+    /**
+     * Окончание "ид", например как в имени Давид. при образовании фамилии и
+     * отчества "и" сохраняется.
+     */
+    ID_IDOV("ID_IDOV"),
+    /**
+     * Окончание "иил", например как в имени Даниил.
+     */
+    IIL_ILOV("IIL_ILOV"),
+    /**
+     * Окончание "ий", например как в имени Анатолий. Используется после
+     * открытого слога.
+     */
+    IJ_ЬEV("IJ_ЬEV"),
+    /**
+     * Окончание "ий", например как в имени Георгий. Используется после
+     * закрытого слога.
+     */
+    IJ_IEV("IJ_IEV"),
+    /**
+     * Окончание "ия", например как в имени Анастасия.
+     */
+    IJ_IN("IJ_IN"),
+    /**
+     * Окончание "ил", как в имени Михаил.
+     */
+    IL_JLOV("IL_JLOV"),
+    /**
+     * Окончание "л", как в имени Кирилл
+     */
+    L_OV("L_OV"),
+            
+    /**
+     * Пустое ударное окончание, например как в фамилии Беляков.
+     */
+    EMPTY_OV_Acct_I("EMPTY_OV_Acct_I"),
     /**
      * Пустое окончание, например как в имени Александр.
      */
-    EMPTY_OV_Free(GrCaseEnding.EMPTY_OV_Free_nom, GrCaseEnding.EMPTY_OV_Free_gen, GrCaseEnding.EMPTY_OV_Free_dat, GrCaseEnding.EMPTY_OV_Free_acc, GrCaseEnding.EMPTY_OV_Free_abl,GrCaseEnding.EMPTY_OV_Free_pre);
+    EMPTY_OV_Free_I("EMPTY_OV_Free_I"),
+    /**
+     * Пустое ударное окончание, например как в фамилии Блинов.
+     */
+    EMPTY_OV_Acct_Ы("EMPTY_OV_Acct_Ы"),
+    /**
+     * Пустое окончание, например как в имени Александр.
+     */
+    EMPTY_OV_Free_Ы("EMPTY_OV_Free_Ы");
+    
     
     private final GrCaseEnding nominative;
     private final GrCaseEnding genitive;
@@ -64,6 +115,10 @@ public enum Ending {
     private final GrCaseEnding accusative;
     private final GrCaseEnding ablative;
     private final GrCaseEnding prepositive;
+    
+    private Ending(String name) {
+        this(GrCaseEnding.valueOf(name+"_nom"), GrCaseEnding.valueOf(name+"_gen"), GrCaseEnding.valueOf(name+"_dat"), GrCaseEnding.valueOf(name+"_acc"), GrCaseEnding.valueOf(name+"_abl"), GrCaseEnding.valueOf(name+"_pre")); 
+    }
 
     private Ending(GrCaseEnding nominative, GrCaseEnding genitive, GrCaseEnding dative, GrCaseEnding accusative, GrCaseEnding ablative, GrCaseEnding prepositive) {
         this.nominative = nominative;
