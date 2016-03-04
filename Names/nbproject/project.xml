@@ -14,17 +14,15 @@
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
             <word>автоматически</word>
             <word>ай</word>
-            <word>Анатолий</word>
             <word>Андрей</word>
             <word>Анжелика</word>
             <word>безударное</word>
             <word>благозвучия</word>
             <word>быть</word>
+            <word>вариант</word>
             <word>варианта</word>
             <word>всегда</word>
-            <word>Георгий</word>
             <word>Давид</word>
-            <word>Даниил</word>
             <word>для</word>
             <word>ей</word>
             <word>ел</word>
@@ -33,10 +31,8 @@
             <word>женских</word>
             <word>женского</word>
             <word>задает</word>
-            <word>закрытого</word>
-            <word>ид</word>
-            <word>иил</word>
-            <word>ий</word>
+            <word>Зоя</word>
+            <word>Зуев</word>
             <word>или</word>
             <word>имен</word>
             <word>именем</word>
@@ -47,6 +43,7 @@
             <word>качестве</word>
             <word>ли</word>
             <word>Лука</word>
+            <word>Любовь</word>
             <word>может</word>
             <word>морфологическому</word>
             <word>мужским</word>
@@ -55,9 +52,11 @@
             <word>мужской</word>
             <word>муравей</word>
             <word>например</word>
+            <word>не</word>
             <word>Никита</word>
             <word>Николай</word>
             <word>образовании</word>
+            <word>овь</word>
             <word>ой</word>
             <word>окончание</word>
             <word>окончаний</word>
@@ -65,7 +64,7 @@
             <word>окончания</word>
             <word>определения</word>
             <word>определяющий</word>
-            <word>открытого</word>
+            <word>отсутствует</word>
             <word>отчеств</word>
             <word>отчества</word>
             <word>отчеством</word>
@@ -73,31 +72,29 @@
             <word>пол</word>
             <word>полная</word>
             <word>полный</word>
-            <word>после</word>
             <word>преобразуется</word>
             <word>при</word>
             <word>применимо</word>
             <word>применимое</word>
             <word>применимость</word>
-            <word>пустое</word>
             <word>размеры</word>
             <word>род</word>
             <word>слов</word>
             <word>слова</word>
             <word>слове</word>
             <word>слово</word>
-            <word>слога</word>
             <word>соответствует</word>
-            <word>сохраняется</word>
             <word>список</word>
             <word>стихотворные</word>
             <word>тип</word>
             <word>только</word>
             <word>ударное</word>
+            <word>уй</word>
             <word>учетом</word>
             <word>фамилией</word>
             <word>фамилии</word>
             <word>фамилий</word>
+            <word>Филипп</word>
             <word>Фома</word>
         </spellchecker-wordlist>
     </configuration>

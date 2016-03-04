@@ -29,6 +29,11 @@ public class RythmicString {
 
     private String base;
     private String rythmPattern;
+    
+    public RythmicString() {
+        this.base = "";
+        this.rythmPattern = "";
+    }
 
     public RythmicString(String base) {
         this.base = base;
